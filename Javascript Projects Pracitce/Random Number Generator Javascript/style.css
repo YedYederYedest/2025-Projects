@@ -1,0 +1,42 @@
+#numberlabel
+{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: sans-serif;
+}
+
+#btncontainer
+{
+    display: block;
+    text-align: center;
+}
+
+.buttons
+{
+    padding: 15px 20px;
+    font-size: 5em;
+    color:black;
+    background-color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+body
+{
+    color: white;
+    background-color: darkcyan;
+}
+
+h1
+{
+    text-align: center;
+    color:white;
+    font-size: 5em;
+}
+
+#title
+{
+    display: block;
+    text-align: center;
+}

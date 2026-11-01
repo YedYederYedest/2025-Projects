@@ -1,0 +1,61 @@
+/* Copy n Paste via ChatGPT Prompt */
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    background-color: #e0f7fa; /* light blue background like the sky */
+    color: #2e7d32; /* dark green text color */
+    margin: 0;
+    padding: 20px;
+    background-image: url('https://www.example.com/path-to-nature-background.jpg'); /* optional background image */
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center; /* Center-align all text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.hidden-input {
+    display: none;
+}
+
+.styled-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    background-color: #a5d6a7; /* light green background for labels */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hidden-input:checked + .styled-label {
+    background-color: #81c784; /* slightly darker green when checked */
+}
+
+button#mysubmit {
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: #388e3c; /* darker green for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#mysubmit:hover {
+    background-color: #2e7d32; /* even darker green on hover */
+}
+
+#subresult,
+#paymentresult {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #c8e6c9; /* light green background for result */
+    border: 1px solid #2e7d32; /* dark green border */
+    border-radius: 5px;
+}

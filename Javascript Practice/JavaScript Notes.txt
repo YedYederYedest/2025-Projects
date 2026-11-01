@@ -1,0 +1,653 @@
+JavaScript Notes
+
+*Variables*
+A container that stores a value; Behaves as if it were the value it contains.
+
+1. Declaration -----------     let x;
+2. Assignment  -----------     x = 100;
+
+
+
+*Arithmetic Operators*
+Operands 	(values, variables, etc.)
+Operators 	(+ - * /)
+
+ex. 11 = x + 5
+
+An example of a kind of shortcut into writing Arithmetic Operators are:
+
+Addition	Variable+=1
+Subtraction	Variable-=1
+Multiplication	Variable*=1
+Division	Variable/=1
+Modulus		Variable%=
+Exponent	Variable**=
+
+
+
+
+*How to Accept User Inputs*
+1. Easy Way = Window Prompt
+2. Professional Way = Html Textbox
+
+
+
+*Type Conversion*
+Changes the Datatype of a value to another (strings, numbers, Booleans)
+
+
+
+*Constants*
+const - short for constant
+A variable that can't be changed
+
+
+
+*Math*
+Built in object that provides a collection of properties and methods
+every math properties could be done here aka a built in Javascript object
+
+
+
+*If Statements*
+If a condition is true, execute some code if not, do something else
+
+
+
+* .checked*
+Property that determines that checked state of an HTML checkbox or radio button element
+
+
+
+*Ternary Operators*
+Shortcut to if{} and else{} statements helps assign a variable based on a condition
+
+Condition? codeIfTrue : codeIfFalse;
+
+
+
+*Switch*
+Can be an efficient replacement to many if else statements
+
+
+
+*String Methods*
+Allow you to manipulate and work with texts (strings)
+
+
+JavaScript provides a variety of methods for working with strings. Here's a simplified overview of the most commonly used string methods:
+
+### Basic String Methods
+
+1. **`length`**: Returns the length of a string.
+   ```javascript
+   let str = "Hello";
+   console.log(str.length); // 5
+   ```
+
+2. **`charAt(index)`**: Returns the character at the specified index.
+   ```javascript
+   console.log(str.charAt(1)); // 'e'
+   ```
+
+3. **`charCodeAt(index)`**: Returns the Unicode of the character at the specified index.
+   ```javascript
+   console.log(str.charCodeAt(1)); // 101
+   ```
+
+4. **`toUpperCase()`**: Converts the string to uppercase.
+   ```javascript
+   console.log(str.toUpperCase()); // 'HELLO'
+   ```
+
+5. **`toLowerCase()`**: Converts the string to lowercase.
+   ```javascript
+   console.log(str.toLowerCase()); // 'hello'
+   ```
+
+### Searching and Extracting
+
+6. **`indexOf(substring)`**: Returns the index of the first occurrence of the specified substring. Returns -1 if not found.
+   ```javascript
+   console.log(str.indexOf('e')); // 1
+   ```
+
+7. **`lastIndexOf(substring)`**: Returns the index of the last occurrence of the specified substring. Returns -1 if not found.
+   ```javascript
+   console.log(str.lastIndexOf('l')); // 3
+   ```
+
+8. **`includes(substring)`**: Checks if the string contains the specified substring.
+   ```javascript
+   console.log(str.includes('ell')); // true
+   ```
+
+9. **`startsWith(substring)`**: Checks if the string starts with the specified substring.
+   ```javascript
+   console.log(str.startsWith('He')); // true
+   ```
+
+10. **`endsWith(substring)`**: Checks if the string ends with the specified substring.
+    ```javascript
+    console.log(str.endsWith('lo')); // true
+    ```
+
+### Substring Extraction
+
+11. **`substring(start, end)`**: Extracts a substring between the start and end indexes (end not included).
+    ```javascript
+    console.log(str.substring(1, 4)); // 'ell'
+    ```
+
+12. **`slice(start, end)`**: Extracts a part of a string and returns it as a new string (end not included).
+    ```javascript
+    console.log(str.slice(1, 4)); // 'ell'
+    ```
+
+13. **`substr(start, length)`**: Extracts a substring from the start index, up to the specified length.
+    ```javascript
+    console.log(str.substr(1, 3)); // 'ell'
+    ```
+
+### Modifying Strings
+
+14. **`replace(substring, newSubstring)`**: Replaces the first occurrence of a substring with a new substring.
+    ```javascript
+    console.log(str.replace('l', 'y')); // 'Heylo'
+    ```
+
+15. **`replaceAll(substring, newSubstring)`**: Replaces all occurrences of a substring with a new substring.
+    ```javascript
+    console.log(str.replaceAll('l', 'y')); // 'Heyyo'
+    ```
+
+16. **`trim()`**: Removes whitespace from both ends of a string.
+    ```javascript
+    let spacedStr = "  Hello  ";
+    console.log(spacedStr.trim()); // 'Hello'
+    ```
+
+17. **`concat(string1, string2, ...)`**: Concatenates one or more strings.
+    ```javascript
+    let str2 = " World";
+    console.log(str.concat(str2)); // 'Hello World'
+    ```
+
+### Splitting and Joining
+
+18. **`split(separator)`**: Splits a string into an array of substrings using the specified separator.
+    ```javascript
+    let sentence = "Hello World";
+    console.log(sentence.split(' ')); // ['Hello', 'World']
+    ```
+
+19. **`join(separator)`**: Joins an array of strings into a single string with the specified separator.
+    ```javascript
+    let words = ['Hello', 'World'];
+    console.log(words.join(' ')); // 'Hello World'
+    ```
+
+### Template Literals
+
+20. **Template Literals**: Use backticks (\``\`) for multi-line strings and embedded expressions.
+    ```javascript
+    let name = "John";
+    let greeting = `Hello, ${name}!`;
+    console.log(greeting); // 'Hello, John!'
+    ```
+
+These methods cover most of the basic operations you might need to perform on strings in JavaScript.
+
+
+
+*string slicing*
+Creating a substring from a portion of another string 
+
+
+
+*Method Chaining*
+Calling one method after another in one continuous line of code
+
+
+
+*Logical Operators*
+Used to combine or manipulate Boolean values: 
+AND = &&
+OR  = ||      (To Type | in keyboard hold shift (left shift) and alt (right alt) then press the symbol)
+Not = !
+
+
+
+*Strict Equality*
+=	assignment operator
+==	comparison operator (compare if values are equal)
+===	strict equality operator (compare if values and DATATYPES are equal)
+!=	inequality operator
+!==	strict inequality operator
+
+
+
+*While Loop*
+Repeat some code WHILE some condition is true
+
+
+
+*For Loop*
+Repeat some code a LIMITED amount of times
+
+
+
+*Function*
+A SELECTION of REUSABLE code. Declare the code once, use it whenever you want. Call the function to execute the code.
+
+
+
+*Variable Scope*
+Where a variable is recognized and accessible (local vs global)
+Local Scope: Variables declared INSIDE a FUNCTION or INSIDE CURLY BRACES
+Global Scope: Variables declared OUTSIDE curly braces/function AKA available for the WHOLE program to see
+
+
+
+*Array*
+Variable like structure that can hold more than 1 value
+
+
+
+*Spread Operator*
+... allows an iterable (strings/arrays) to be expanded into separate elements
+
+
+
+*Rest Parameters*
+(... rest) Allow a function work with a variable number of arguments by bundling them into an array
+Spread = expands an array into separate elements
+Rest = bundles separate elements into an array
+
+
+
+*Callback*
+A function that is passed as an argument to another function 
+
+Used to handle asynchronous operations:
+1. Reading a file
+2. Network requests
+3. Interacting with databases
+
+
+
+*forEach()*
+Method used to iterate over the elements of an array and apply a specified function (CALLBACK) to each element
+
+array.forEach(callback)
+
+
+
+*.map()*
+Accepts a callback and applies that function to each element of an array, then return a new array
+
+
+
+*.filter()*
+Creates a new array by filtering out elements
+
+
+
+*.reduce()*
+Reduces the elements of an array to a single value
+
+
+
+*function declaration*
+Define a reusable block of code that performs a specific task
+
+
+
+*function expression*
+A way to define functions as values or variables
+1. Callbacks in asynchronous operations
+2. Higher-Order Functions
+3. Closures
+4. Event Listeners
+
+
+
+*Arrow functions*
+A concise way to write function expressions good for simple functions that you use only once 
+
+(parameters) => some code
+
+
+
+*Object*
+A collection of related properties and/or methods
+Can represent real world objects (people, products, places)
+
+object = {key:value,
+	  funtion()}
+
+
+
+*This*
+Reference to the object where THIS is used
+(the object depends on the immediate context)
+person.name = this.name
+
+
+
+*Constructor*
+Special method for defining the properties and methods of objects
+
+
+
+*Classes*
+(ES6 Feature) provides a more structured and cleaner way to work with objects compared to traditional constructor functions 
+
+ex. static keywords, encapsulation, inheritance
+
+
+
+*Static*
+Keyword that defines properties or methods that belong to a class itself rather than the objects created from that class (class owns anything static, not the objects)
+
+
+
+*Inheritance*
+Allows a new class to inherit properties and methods from an existing class (parent -> child); Helps with code reusability
+
+
+
+*Super*
+Keyword is used in classes to call the constructor or access the properties and methods of a parent (superclass)
+this = this object
+super = the parent
+
+
+
+*Getter*
+Special method that makes a property readable
+
+*Setter*
+Special method that makes a property writeable
+
+Validate and modify a value when reading/writing a property
+
+
+
+*Destructuring*
+extract values from arrays and objects, then assign them to variables in a convenient way
+[] = to perform array destructuring
+{} = to perform object destructuring
+
+Example 1
+//Swap the value of two variables
+
+let a = 1;
+let b = 2;
+
+[a, b] = [b, a];
+
+what will happen here is essentially: b = 1 && a = 2; instead of the a = 1 && b = 2
+
+Example 2
+//Swap two elements in an array
+
+const colors = ["red", "green", "blue", "black", "white"];
+
+[colors[0], colors[4]] = [colors[4], colors[0]]
+
+Same idea as the first example
+what will happen here is essentially: ["white", "green", "blue", "black", "red"]
+
+Example 3
+//Assign array elements to variables
+
+const colors = ["red", "green", "blue", "black", "white"];
+
+const [firstColor, secondColor, thirdColor] = colors;
+
+what will happen here is essentially: 
+console.log(firstColor) the result would be "red". So forth and so on
+
+Example 4
+//Extract values from objects
+
+const person1 =
+{
+    firstName: "Spongebob";
+    lastName: "Squarepants";
+    age: 30;
+    job: "Fry Cook";
+}
+
+const person2 =
+{
+    firstName: "Patrick";
+    lastName: "Star";
+    age: 34;
+    job: "Unemployed";
+}
+
+const {firstName, lastName, age, job} = person1;
+
+console.log(firstName);
+console.log(lastName);
+console.log(age);
+console.log(job);
+
+what will happen here is essentially: 
+person1 details will show up, unless we change it to person2 thus person2 details
+will show up
+
+Example 5
+//Destructure in function parameters
+
+function displayPerson({firstName, lastName, age, job})
+{
+    console.log(`name: ${firstName} ${lastName}`)
+    console.log(`age: ${age})
+    console.log(`job: ${job}`)
+}
+
+const person1 =
+{
+    firstName: "Spongebob";
+    lastName: "Squarepants";
+    age: 30;
+    job: "Fry Cook";
+}
+
+const person2 =
+{
+    firstName: "Patrick";
+    lastName: "Star";
+    age: 34;
+    job: "Unemployed";
+}
+
+displayPerson(person1);
+
+what will happen here is essentially: 
+The same as example 4
+
+
+
+*Nested Objects*
+Objects inside of other objects
+
+Allows to represent more complex data structures
+Child Object is enclosed by a Parent Object 
+
+Ex.
+Person{Address{}, ContactInfo{}}
+ShoppingCart{Keyboard{}, Mouse{}, Monitor{}}
+
+Detailed Ex.
+const Person = 
+{
+    fullName: "Yuri Evgeni U. de Joya",
+    Age: 19,
+    isStudent: true,
+    Hobbies: ["Chess", "Coding", "Contemplating"],
+    Address: 
+    {
+        street: "Stoklosy 6/28",
+        city: "Warsaw",
+        country: "Poland"
+    }
+
+}
+
+console.log(Person.Address.street)
+
+
+
+*sort()*
+Method used to sort elements of an array in place.
+Sorts elements as strings in lexicographic order
+
+lexicographic = (alphabet + numbers + symbols) as strings
+
+
+
+*Date Objects*
+Objects that contain values that represents dates and times.
+These date objects can be changed and formatted.
+
+//Date(year, month, day, hour, minute, second, ms)
+
+
+
+*Closures*
+A function defined inside of another function, the inner function has access
+to the variables and scope of the outer function.
+
+Allows for private variables and state maintenance 
+Used frequently in JS frameworks: React, Vue, Angular
+
+
+
+*setTimeout()*
+A function in JS that allows you to schedule the execution 
+of a function after an amount of time (milliseconds)
+
+Times are approximate (varies based on the workload of JS runtime ev.)
+
+To use:
+
+setTimeout(callback, delay);
+
+clearTimeout(TimeoutId) = can cancel a timeout before it triggers
+
+
+
+*ES6 Module*
+An external file that contains reusable code that can be imported 
+into other JavaScript files. Write reusable code for many different apps.
+Can contain variables, classes, functions... and more 
+Introduced as part of ECMAScript 2015 update.
+
+
+
+*Synchronous*
+Executes line by line consecutively in a sequantial manner.
+Code that waits for an operation to complete.
+
+*Asynchronous*
+Allows multiple operations to be performed concurrently without waiting
+Doesn't block the execution flow and allows the program to continue
+(I/O operations, network requests, fetching data)
+Handled with: Callbacks, Promises, Async/Await
+
+
+
+*Error*
+An object that is created to represent a problem that occurs.
+Occur often with user input or establishing a connection
+
+Example of Errors:
+//Network Errors
+//Promise Rejection
+//Security Errors
+
+Solutions:
+//try{} = Encloses code that might potentially cause an error
+//catch{} = Catch and handle any thrown errors from try{}
+//finally{} = (Optional) Always executes. Used mostly for clean up
+ex. close files, close connections, release resources
+
+
+
+*DOM (Document Object Model)*
+Object{} that represents the page that you can see in the web browser and 
+provides you with an API to interact with it.
+
+Web browser constructs the DOM when it loads an HTML document, and 
+structures all the elements in a tree like representation.
+
+JavaScript can access DOM to dynamically change the 
+content, structure, and style of a Web Page. (Without the help of CSS!)
+
+
+
+*Element Selectors*
+Method used to target and manipulate HTML elements. 
+They allow you to select one or multiple HTML elements from the DOM.
+
+//1. document.getElementByID()          // ELEMENT OR NULL
+//2. document.getElementsClassName()    // HTML COLLECTION
+//3. document.getElementByTagName()     // HTML COLLECTION
+//4. document.querySelector()           // ELEMENT OR NULL
+//5. document.querySelectorAll()        // NODELIST
+
+
+
+*DOM Navigation*
+The process of navigating through the structure of an HTML document using Javascript
+
+// .firstElementChild
+// .lastElementChild
+// .nextElementSibling
+// .previousElementSibling
+// .parentElement
+// .children
+
+
+
+*Add & Change HTML*
+//Example 1
+
+//Step 1 Create the Element
+//Step 2 Add Attributes/properties
+//Step 3 Append Element to DOM
+//Remove HTML Element
+
+
+
+*Event Listeners* Aka *Mouse Events* 
+Listen for specific events to create interactive web pages 
+events: click, mouseover, mouseout
+
+.addEventListener(event, callback);
+
+
+
+*NodeList*
+Static collection of HTML elements by (id, class, element)
+
+Can be created by using querySelectorAll()
+Similar to an array, but no (map, filter, reduce)
+NodeList won't update to automatically reflect changes.
+
+
+
+*classList*
+Element property in JavaScript used to interact with an element's
+list of classes (CSS Classes).
+Allows you to make reusable classes for many elements across your webpage.
+
+//add()
+//remove()
+//toggle(Remove if present, Add if not)
+//replace(oldClass, newClass)
+//contains()

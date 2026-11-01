@@ -1,0 +1,50 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-family: sans-serif;
+
+    text-align: center;
+    font-size: 3em;
+
+    background-color: #c1121f;
+    color: #fdf0d5;
+}
+
+h1
+{
+    text-align: center;
+}
+
+button
+{
+    font-family: sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+
+    margin-top: 50px;
+
+    cursor: pointer;
+
+    background-color: #fdf0d5;
+    color: #c1121f;
+    border: none;
+    transition: 0.2s;
+}
+
+button:hover
+{
+    color: #fdf0d5;
+    background-color: #c1121f;
+}
+
+#emoji-show
+{
+    margin: 0 auto;
+    background-color: #780000;
+    height: 200px;
+    width: 700px;
+
+    font-size: 2em;
+}

@@ -1,0 +1,307 @@
+/*
+Color Pallete 
+https://coolors.co/595959-808f85-91c499-f2e9dc-cfd11a
+*/
+
+
+.oswald-uniquifier 
+{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;;
+    font-style: normal;
+  }
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", serif;
+}
+
+body
+{
+    min-height: 100vh;
+    background-color: #808F85;
+}
+
+nav
+{
+    background-color: #CFD11A;
+    width: 100%;
+    padding: 20px;
+}
+
+nav .menu
+{
+    background-color: #F2E9DC;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+}
+
+.menu .logo a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+
+    transition: color 0.5s ease-in-out;
+}
+
+.menu .logo a:hover
+{
+    animation: flashyColorTextOnly  0.3s infinite;
+}
+
+.menu ul
+{
+display: inline-flex;
+}
+
+.menu ul li
+{
+    margin: 7px;
+    list-style: none;
+}
+
+.menu ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+    
+    transition: font-size 0.5s ease-in-out;
+}
+
+.menu ul li a:hover
+{
+    font-size: 30px;
+}
+
+.HomeSection
+{
+    position: relative;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 30%);
+    background-color: #F2E9DC;
+    padding: 20 60px;
+    text-align: center;
+}
+
+.HomeSection .hometext
+{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.HomeSection .hometextintro
+{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.HomeSection .homebtns
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.HomeSection .homebtns button
+{
+    font-size: 25px;
+    height: 100px;
+    width: 170px;
+    border-radius: 5px;
+    margin: 0 20px;
+    padding: 0 20px;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease-in-out;
+}
+
+.HomeSection .homebtns button:first-child
+{
+    background-color: #CFD11A;
+    color: white;
+}
+
+.HomeSection .homebtns .projbutton:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.HomeSection .homebtns .fancybutton:hover
+{
+    animation: flashyColor;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+/*Projects Corner*/
+
+
+.Homepartsection 
+{
+    position: relative;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 500px);
+    background-color: #CFD11A;
+    padding: 20 60px;
+    text-align: center;
+}
+
+.main-content
+{
+    border: 10px solid black;
+    height: 500px;
+    width: 500px;
+    float: 10px;
+}
+
+.box1
+{
+   position: relative;;
+}
+
+.box2
+{
+    position: relative;
+}
+
+
+/*Footer*/
+.footer
+{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #CFD11A;
+    margin-top: 100%;
+}
+
+.footer .social
+{
+    text-align: center;
+    padding-bottom: 25px;
+    color: black;
+}
+
+.footer .social a
+{
+    font-size: 25px;
+    color: black;
+    border: 2px solid black;
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover
+{
+    transform: scale(1.2) translate(-5px);
+    background: black;
+    color: #CFD11A;
+    box-shadow: 0 0 25px black;
+}
+
+.footer ul
+{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a
+{
+    color: var(--text-color) ;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.footer ul li a:hover
+{
+    border-bottom: 3px solid black;
+}
+
+.footer ul li
+{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright
+{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+@keyframes flashyColor 
+{
+25% 
+{
+    background-color: #CFD11A; color: white;
+}   
+
+50%
+{
+    background-color: #91C499; color: #595959;
+}
+
+75%
+{
+    background-color: #595959; color: #F2E9DC;
+}
+
+100%
+{
+    background-color: #F2E9DC; color: #CFD11A;
+}
+}
+
+@keyframes flashyColorTextOnly 
+{
+25% 
+{
+     color: crimson;
+}   
+
+50%
+{
+     color: goldenrod;
+}
+
+75%
+{
+    color: midnightblue;
+}
+
+100%
+{
+     color: purple;
+}
+}

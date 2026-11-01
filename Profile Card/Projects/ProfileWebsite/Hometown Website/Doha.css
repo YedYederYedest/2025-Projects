@@ -1,0 +1,238 @@
+.spectral-extralight 
+{
+  font-family: "Spectral", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body 
+{
+    font-family: "Spectral", serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    background: linear-gradient(#A8DADC, #1D3557);
+}
+
+#hero-section
+{
+    display: flex;
+    flex-direction: column;
+    
+    background: url(images/Qatarcity.jpg);
+    background-size: cover;
+    background-position:bottom;
+    height: 300px;
+    width: 100%;
+}
+
+.herotext-h2
+{
+    border-top: 1.5px solid #1D3557;
+    border-bottom: 1.5px solid #1D3557;
+    background-color: #F1FAEE;
+    color: #1D3557;
+    padding: 0px 20px 0 10px; 
+
+    transition: 0.25s;
+}
+
+.herotext-h2:hover
+{
+    background-color: #1D3557;
+    color: #F1FAEE;
+    border-top: 1.5px solid #F1FAEE;
+    border-bottom: 1.5px solid #F1FAEE;
+}
+
+.qatar
+{
+    transition: 0.5s;
+}
+
+.qatar:hover
+{
+    color: #E63946;
+    cursor: pointer;
+}
+
+.herotext-h5
+{   
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 10px auto;
+
+    background-color: #F1FAEE;
+    color: #1D3557;
+    padding: 2px;
+    border: 1.5px solid #1D3557; 
+
+    transition: 0.25s;
+}
+
+.herotext-h5:hover
+{
+    background-color: #1D3557;
+    color: #F1FAEE;
+    border: 1.5px solid #F1FAEE; 
+}
+
+.h1-activity
+{
+    border-top: 1.5px solid #1D3557;
+    border-bottom: 1.5px solid #1D3557;
+    background-color: #F1FAEE;
+    color: #1D3557;
+    padding: 0px 20px 0 10px; 
+    margin: 0;
+    transition: 0.25s;
+}
+
+.h1-activity:hover
+{
+    background-color: #1D3557;
+    color: #F1FAEE;
+    border-top: 1.5px solid #F1FAEE;
+    border-bottom: 1.5px solid #F1FAEE;
+}
+
+.three-activities
+{
+    transition: 0.5s;
+}
+
+.three-activities:hover
+{
+    color: #E63946;
+    font-size: 70px;
+}
+
+.activity-img
+{
+    width: 300px;
+    height: 300px;
+    border: 2px solid #F1FAEE;
+    border-radius: 50px;
+
+    transition:2s;
+}
+
+.activity-img:hover
+{
+    width: 350px;
+    height: 350px;
+    border: 2px solid #1D3557;
+    cursor: pointer;
+}
+
+#activity-section
+{
+    display: flex;
+    justify-content: center;
+
+    background: url(images/qatarairway.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.activity
+{
+    text-align: center;
+    padding: 5px;
+    margin: 50px 20px;
+
+    
+    color: #1D3557;
+}
+
+.activity h2
+{
+    width: 100%;
+    height: 50px;
+    background-color: #F1FAEE;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+
+.activity p
+{
+    margin: 2px 10px 20px 10px;
+    background-color: #F1FAEE;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+#smile
+{
+    width: 150px;
+}
+
+#guide-section
+{
+    width: 400px;
+    margin: 0px auto 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #d0cbc3;
+    color: #1D3557; 
+
+    transition: 2.5s;
+
+}
+
+#guide-section:hover
+{
+    width: 500px;
+    padding: 50px;
+    border-radius: 50px;
+    font-size: larger;
+    text-shadow: 2px 2px 5px;
+
+
+    animation: changecolor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#guide-background
+{
+    padding: 150px;
+    background: url(images/qatar\ boats.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.tourguide
+{
+    transition: 0.5s;
+}
+
+.tourguide:hover
+{
+    color: #E63946;
+    font-size: 70px;
+}
+
+
+/*Animations*/
+@keyframes changecolor
+{
+50%
+{
+    background-color: #1e5547; color: #f8d4ac;
+}    
+}

@@ -1,0 +1,238 @@
+.audiowide-regular {
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Audiowide", serif;
+}
+
+body
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.profile-card
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 370px;
+    width: 100%;
+    border: 3px solid black;
+    box-shadow: 0 5px 5px;
+    border-radius: 30px;
+    padding: 25px;
+    position: relative;
+
+    /*
+    animation: changeColor;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+*/
+}
+
+.profile-card::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    background-color: white;
+    border-radius:30px 30px 0 0;
+
+    
+    animation: changeColor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+.image
+{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.image .profileImage
+{
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.profile-card .text-data
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   /* animation: changeColorFonts;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    */
+}
+
+
+.text-data .name
+{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.text-data .occupation
+{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.profile-card .media-buttons
+{
+display: flex;
+align-items: center;
+margin-top: 10px;
+}
+
+.media-buttons .links
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    background-color: black;
+    text-decoration: none;
+    padding: 5px;
+    margin: 0 8px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+
+    /*Create Color changing Animations for respective links when hovered over*/
+}
+
+.fa-brands.fa-facebook:hover
+{
+    animation: changeColorFacebook;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.fa-brands.fa-instagram:hover
+{
+    animation: changeColorInstagram;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.fa-brands.fa-tiktok:hover
+{
+    animation: changeColorTiktok;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.fa-brands.fa-linkedin:hover
+{
+    animation: changeColorLinkedin;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.profile-card .buttons
+{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.buttons .buttonpress
+{
+    border-radius: 25px;
+    margin: 0 8px;
+    padding: 8px 24px;
+    font-size: 1em;
+    font-weight: 400;
+    cursor: pointer;
+
+    /*Animation for making big and small*/
+    transition: font-size 0.5s ease-in-out;
+}
+
+.buttonpress:hover
+{
+    font-size: 1.5em;
+}
+
+
+/*Animations*/
+@keyframes changeColor 
+{
+0%{background-color: crimson;}
+33%{background-color: goldenrod;}
+66%{background-color: midnightblue;}
+100%{background-color: orangered;}    
+}
+
+@keyframes changeColorFonts 
+{
+50% {color: white;}
+}
+
+@keyframes changeColorFacebook 
+{
+50% 
+{
+    color: #1877F2; background-color: white;
+    padding: 7px;
+    border-radius: 50%;
+}
+}
+
+@keyframes changeColorInstagram 
+{
+50% 
+{
+    color: #e1306c; background-color: white;
+    padding: 7px;
+    border-radius: 50%;
+}
+}
+
+@keyframes changeColorTiktok 
+{
+50% 
+{
+    color: black; background-color: white;
+    padding: 7px;
+    border-radius: 50%;
+}
+}
+
+@keyframes changeColorLinkedin 
+{
+50%
+{
+    color: #0077B5; background-color: white;
+    padding: 7px;
+    border-radius: 50%;
+}
+}

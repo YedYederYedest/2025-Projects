@@ -1,0 +1,558 @@
+.candal-regular 
+{
+    font-family: "Candal", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+html 
+{ 
+    scroll-behavior:smooth; 
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+body
+{
+    text-align: center;
+    font-family: "Candal", serif;
+    color: white;
+    background-color: #4D4D4Dff;
+}
+
+/*Navigation Bar*/
+.mainnav
+{
+    background-color:black ;
+    position: relative;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 100px;
+
+    border-bottom: 2px white solid;
+
+    font-size: 1.5em;
+}
+
+#sectionHeading
+{
+    font-size: 2em;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+#nav-img
+{
+    max-width: 150px;
+    transition: 0.5s;
+    border-radius: 50px;
+    border: 2.5px solid #0061ff;
+}
+
+#nav-img:hover
+{
+    max-width: 170px;
+    border: 2.5px solid #60efff;
+}
+
+.nav-items
+{
+    display: flex;
+}
+
+.nav-items li
+{
+    list-style: none;
+}
+
+.nav-items li a
+{
+    position: relative;
+    text-decoration: none;
+    margin-left: 50px;
+    color: #E5E5E5ff;
+
+    background-image: linear-gradient(#0061ff, #60efff);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: center;
+
+    transition: background-size 500ms, color 0.5s;
+}
+
+.nav-items li a:hover
+{
+    background-size: 100% 100%;
+    background-position-x: center;
+    color: black;
+}
+
+/*Btn Class for ALL BUTTONS*/
+.btn
+{
+    font-family: "Candal", serif;
+    font-size: 1.5em;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    color: black;
+    background-color: #E5E5E5ff;
+    cursor: pointer;
+
+
+    transition: 0.5s;
+}
+
+/*Hero Div*/
+#HeroDiv
+{
+    height: 100vh;
+    padding: 150px;
+
+    background: url(MadaoGymImages/deadlift.jpg);
+    background-size: 1550px;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+
+.hero-Container
+{
+    display:block;
+    margin: 50px;
+    padding: 20px;
+}
+
+#border-heroText
+{
+    height: 150px;
+    text-align: left;
+    margin: 50px;
+}
+
+/*H1 Animation*/
+.welcomeLoader
+{
+    color: white;
+    box-sizing: content-box;
+    height: 50px;
+    padding: 20px;
+    display: flex;
+
+}
+
+.heroText-Animation
+{
+    font-size: 25px;
+    font-weight: bold;
+    overflow: hidden;
+    position:relative;
+    padding: 5px;
+}
+
+.heroWord
+{
+    display: block;
+    height: 100%;
+    padding-left: 6px;
+    animation: textingAnimation 8s infinite;
+}
+
+/*End of H1 Animation*/
+
+#heroBtn-1:hover
+{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+
+#heroBtn-2
+{
+   background-image: linear-gradient(#0061ff, #60efff);
+   background-repeat: no-repeat;
+   background-size: 0% 100%;
+   background-position-x: left;
+
+    margin-left: 50px;
+
+    transition: background-size 500ms, color 1.5s;
+}
+
+#heroBtn-2:hover
+{
+    background-size: 100% 100%;
+    background-position-x: right;
+
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+/*HomeDiv*/
+#HomeDiv
+{
+    height: 100vh;
+    padding: 55px;
+    background-color: #4D4D4Dff;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper-homeImgContainer /*BODY IN THIS CASE*/
+{
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: top;
+    align-items:start;
+    min-height: 50vh;
+    width: 50%;
+
+}
+
+.HomeText
+{
+    font-size: 3em;
+}
+
+.homeImg-Container
+{
+    width: 80%;
+    height: 575px;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+
+    /*border: 2px solid blue;*/
+}
+
+.homeImg-Container img
+{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+
+    transition: all ease-in-out 0.5s;
+}
+
+.homeImg-Container img:hover
+{
+    width: 55%;
+}
+
+.wrapper-homeTxtContainer
+{
+    display: block;
+    padding: 20px;
+    margin: 0 0 0 50px;
+}
+
+#homeBtn-1
+{
+    margin: 100px 0;
+
+    background-image: linear-gradient(#0061ff, #60efff);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: left;
+
+    transition: background-size 500ms, color 1.5s, font-size 1.5s;
+}
+
+#homeBtn-1:hover
+{
+    color: white;
+    border: 2px solid black;
+    font-size: 2.5em;
+    text-shadow: 0px 0px 10px black;
+
+    background-size: 100% 100%;
+    background-position-x: right;
+}
+
+/*PriceDiv*/
+#PriceDiv
+{
+    height: 100vh;
+    padding: 55px;
+    background-color: black;
+    color: white;
+
+    display: flex;
+}
+
+.priceBorder
+{
+    border: 3px solid white;
+
+    width: 500px;
+    
+}
+
+.fa-solid
+{
+    margin: 25px 0 5px 0;
+    font-size: 2em;
+}
+
+ul
+{
+    list-style: none;
+}
+
+#priceBtn
+{
+    margin: 180px 0;
+}
+
+#priceBtnIndividual
+{
+    margin: 100px 0;
+}
+#priceBtnFamily
+{
+    margin: 80px 0;
+}
+
+.priceBorder .btn
+{
+    background-image: linear-gradient(#0061ff, #60efff);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: center;
+
+    transition: background-size 500ms, color 1.5s;
+}
+
+.priceBorder .btn:hover
+{
+    background-size: 100% 100%;
+    background-position-x: center;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+/*ContactDiv*/ /*Inspired by Responsive Contact Form using HTML & CSS by True Coder on YT*/
+/*Change the background for the entire DIV, Make form interactive, button interactive
+fix the font, and make the square bigger in the screen*/
+#ContactDiv
+{
+    height: 100vh;
+    padding: 55px;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+#ContactDiv::after
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    filter: blur(50px);
+    z-index: -1px;
+
+    /*Change the background of the ContactDiv into the guy running on the treadmill*/
+}
+
+.contactBox
+{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 19px 5px;
+}
+
+.contactLeft
+{
+    background: url(MadaoGymImages/guy\ running\ on\ treadmill.jpg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.contactRight
+{
+    padding: 25px 40px;
+}
+
+.contactRight h1
+{
+    position: relative;
+    padding: 0px 0px 10px;
+    margin-bottom: 10px;
+}
+
+.contactRight h1::after
+{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.field
+{
+    font-weight: bold;
+    width: 100%;
+    border: 2px solid black;
+    outline: none;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 0.3s;
+}
+
+/*
+.field:focus
+{
+    border: 2px solid green;
+    background-color: orange;
+}
+
+.field:hover
+{
+    background-color: blue;
+}*/
+
+textarea
+{
+    min-height: 150px;
+}
+
+#contactBtn
+{
+    border: 5px solid blueviolet;
+
+    background-image: linear-gradient(#0061ff, #60efff);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+
+    transition: background-size 500ms, color 1.5s;
+}
+
+#contactBtn:hover
+{
+    background-size: 100% 100%;
+    background-position-x: right;
+
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+/*ClassDiv*/
+#ClassDiv
+{
+    height: 100vh;
+    padding: 55px;
+    background-color: black;
+    color: white;
+    
+}
+
+.classSquare
+{
+    margin: 50px auto;
+    height: 75vh;
+    width: 200vh;
+    border: 5px solid white;
+    display: flex;
+    flex-direction: row;
+}
+
+.classBorder
+{
+    border: 1px solid white;
+}
+
+#classHeading
+{
+    font-size: 3em;
+}
+
+/*Footer*/
+#footerDiv
+{
+    height: 50vh;
+    text-align: left;
+
+    padding: 10px;
+
+    background-color: black;
+    border: 1px solid red;
+
+}
+
+/*Animations*/
+@keyframes textingAnimation 
+{
+    25% {
+        transform: translateY(-100%);
+    }
+
+    35% {
+        transform: translateY(-202%);
+    }
+
+    50% {
+        transform: translateY(-200%);
+    }
+
+    60% {
+        transform: translateY(-302%);
+    }
+
+    75% {
+        transform: translateY(-300%);
+    }
+
+    85% {
+        transform: translateY(-402%);
+    }
+
+    90% {
+        transform: translateY(-400%);
+    }
+
+    100%{
+    
+            transform:translateY(-10%);
+    }
+}

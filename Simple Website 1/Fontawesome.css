@@ -1,0 +1,46 @@
+body
+{
+    background-color: black;
+}
+
+.icons
+{
+    margin: 50px;
+    text-align: center;
+}
+
+.icons a
+{
+    margin: 10px;
+    text-decoration: none;
+}
+
+.fa-solid.fa-house.fa-5x
+{
+    color: white;
+}
+
+.fa-solid.fa-house.fa-5x:hover
+{
+    color: aliceblue;
+}
+
+.fa-solid.fa-address-book.fa-5x
+{
+color: red;
+}
+
+.fa-solid.fa-address-book.fa-5x:hover
+{
+    color: rgb(245, 38, 38);
+}
+
+.fa-brands.fa-instagram.fa-5x
+{
+    color: rgb(225, 83, 31);
+}
+
+.fa-brands.fa-instagram.fa-5x:hover
+{
+    color: orangered;
+}

@@ -1,0 +1,118 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: black;
+}
+
+header
+{
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    background-color: wheat;
+    padding: 20px;
+}
+
+/*Navigation Bar*/
+.navbar ul
+{
+    list-style-type: none;
+    background-color: goldenrod;
+    padding: 15px;
+    margin: 50px;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.navbar li
+{
+    float: right;
+    margin: 5px;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    color: white;
+}
+
+/*Section, Aside, Article*/
+.othermain
+{
+    margin: 50px;
+    padding-bottom: 40%;
+}
+
+.aside1
+{
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+
+.aside2
+{
+    width: 20%;
+    float: right;
+    padding: 0px;
+}
+
+section
+{
+    width: 40%;
+    float: left;
+    padding: 40px;
+}
+
+article
+{
+    width: 50%;
+    float:left;
+}
+
+
+/*Main*/
+main
+{
+    color: white;
+    border: 2px solid white;
+    margin: auto;
+    padding: 50px;
+}
+
+.homepage
+{
+    border: 2px solid white;
+    margin: auto;
+    padding: 50px;
+}
+
+.aboutpage
+{
+    border: 2px solid white;
+    margin: auto;
+    padding: 50px;
+}
+
+.contactpage
+{
+    border: 2px solid white;
+    margin: auto;
+    padding: 50px;
+}
+
+/*Footer*/
+footer
+{
+    background-color: wheat;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+}
+

@@ -1,0 +1,29 @@
+body
+{
+    background-color: black;
+}
+
+header
+{
+    background-color: goldenrod;
+    text-align: center;
+}
+
+#songpart
+{
+    color: white;
+    text-align: center;
+}
+
+footer
+{
+    background-color: goldenrod;
+    text-align: center;
+}
+
+#lyrics
+{
+    background-color: gray;
+    font-size: 20px;
+    color: black;
+}

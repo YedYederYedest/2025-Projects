@@ -1,0 +1,26 @@
+/*Pseudo-Elements*/
+h1::first-letter
+{
+    font-size: 2em;
+}
+
+p::selection
+{
+    background-color: black;
+    color: gold;
+}
+
+#vegtables li::before
+{}
+#apples
+{
+content: "";
+}
+
+#vegtables li::marker
+{
+content: "Hello World";
+}
+
+
+/*Pseudo-Classes*/

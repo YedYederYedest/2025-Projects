@@ -1,0 +1,313 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: slategrey;
+}
+
+header
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav
+{
+    font-size: 25px;
+    text-decoration:none;
+    color: white;
+}
+
+.odd
+{
+    background-color: aliceblue;
+    font-size: large;
+}
+
+
+.even
+{
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+
+#p1
+{
+    color: green;
+}
+
+#p2
+{
+    color: brown;
+}
+
+#p3
+{
+    color: red;
+}
+
+#p4
+{
+    color: salmon;
+}
+
+footer
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 25px;
+}
+
+hr
+{
+    color: red;
+    font-size: 2em;
+}
+
+#shadowtext
+{
+text-shadow: 5px 5px 3px red;
+text-align: center;
+}
+
+#shadowbox
+{
+width: 100px;
+height: 100px;
+background-color: white;
+box-shadow: 5px 5px 5px seagreen;
+margin: auto;
+
+}
+
+.box
+{
+    border: 10px solid;
+    font-size: 3em;
+    width: 250px;
+    height: 250px;
+}
+
+#box1
+{
+    background-color: brown;
+    margin: auto;
+}
+
+#box2
+{
+    background-color: midnightblue;
+    margin: auto;
+    margin-top: 30px;
+}
+
+ img
+ {
+    height: 250px;
+    margin: 10px;
+    width: 250px;
+ }
+
+ #img1
+ {
+    float: left;
+ }
+
+ #img2
+ {
+    float: right;
+ }
+
+
+ .floatism
+ {
+    border: 5px solid;
+    display: flow-root;
+ }
+
+ .overflowism
+ {
+    border: 2px solid;
+    height: 100px;
+    overflow: auto;
+ }
+
+ .displayism
+ {
+    background-color: maroon;
+    display:inline-block;
+ }
+
+ .inlineism
+ {
+    background-color: seagreen;
+    display: inline;
+ }
+
+.heightweight
+{
+    border: 2px solid;
+    padding: 50px;
+    height: auto;
+    width: 50%;
+    float: left;
+    color: white;
+}
+
+.containerofhw
+{
+    background-color: salmon;
+    height: 35vh;
+}
+
+.position
+{
+text-align: center;
+}
+
+.positiondiv
+{
+    width: 100px;
+    height: 100px;
+    background-color: lawngreen;
+position: relative;
+left: 47%;
+
+}
+
+.positiondiv2
+{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 51);
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+.backgroundthingy
+{
+    font-size: 3em;
+    color: red;
+    text-align: center;
+    background-image: url(ImagesFolder/backgroundimage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#combinators
+{
+    border: 2px solid;
+}
+
+#combinators ~ p /*Try switching whatever symbol is written with the following = [> ~ +] */
+{
+    background-color: yellow;
+    text-align: center;
+}
+
+
+/*Pseudo-Classes*/
+a 
+{
+    margin-left: 48%;
+}
+
+a:link
+{
+    border: 2px solid;
+    color: maroon;
+}
+
+a:hover
+{
+    color: goldenrod;
+    font-size: 2em;
+}
+
+a:active
+{
+    color: blue;
+    font-size: 5em;
+}
+
+a:visited
+{
+    font-size: 5em;
+    color: chocolate;
+}
+
+.psuedo
+{
+    margin-left: 48%;
+    border: 2px;
+    font-size: 25px;
+    color: green;
+    background-color: black;
+}
+
+.psuedo:hover
+{
+    font-size: 30px;
+    background-color: white;
+    color: red;
+}
+
+.psuedo:visited
+{
+    font-size: 50px;
+}
+
+li
+{
+    font-size: 2em;
+    text-align: center;
+    display:grid;
+}
+
+li:hover
+{
+    color: goldenrod;
+    font-size: 3em;
+}
+
+li:active
+{
+    color: darkred;
+}
+
+.psuedogreeting
+{
+    background-color: saddlebrown;
+    font-size: 2em;
+    text-align: center;
+    border: 2px solid;
+    padding: 5px;
+}
+
+.psuedogreeting p
+{
+    background-color: plum;
+    font-size: 1em;
+    text-align: center;
+    border: 2px solid;
+    padding: 5px;
+    display: none;
+}
+
+.psuedogreeting:hover p
+{
+    display: block;
+}
+
+/*Pseudo-Classes*/
